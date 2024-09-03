@@ -1,0 +1,24 @@
+{
+  "name": "@meprovas/meui",
+  "version": "0.1.0",
+  "description": "",
+  "main": "src/index.js",
+  "types": "src/index.d.ts",
+  "repository": "https://github.com/meprovas/meui",
+  "scripts": {
+    "dev": "live-server .",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tailwindcss -o dist/tailwind.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "peerDependencies": {
+    "tailwindcss": ">=3.0.0 || >= 3.0.0-alpha.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.19",
+    "postcss": "^8.4.40",
+    "tailwindcss": "^3.4.7"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "meui",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "docs:dev": "pnpm -F=docs dev",
+    "docs:build": "pnpm -F=docs build",
+    "docs:serve": "pnpm -F=docs serve",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint .",
+    "format": "prettier --write ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@eslint/js": "^9.8.0",
+    "eslint": "9.x",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "globals": "^15.8.0",
+    "prettier": "^3.3.3",
+    "typescript-eslint": "^7.17.0"
+  }
+}

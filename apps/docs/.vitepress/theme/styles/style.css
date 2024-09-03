@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Rambla:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --vp-c-text-1: #000;
+  --vp-c-text-2: #3d3d3c;
+
+  --vp-c-gutter: #000;
+  --vp-c-border: #000;
+  --vp-c-divider: #b7b7b4;
+
+  --vp-button-brand-bg: #206bc4;
+  --vp-button-brand-hover-bg: #1d61b5;
+  --vp-button-alt-bg: #fbfbf9;
+  --vp-button-alt-hover-bg: #fcfcfc;
+
+  --vp-c-bg: #f4f4f0;
+  /* --vp-sidebar-bg-color: #e7e5e4; */
+  --vp-sidebar-bg-color: #e7e5e4;
+
+  --vp-c-brand: #ff7340;
+  --vp-c-brand-1: #206bc4;
+  --vp-c-brand-light: #ff5719;
+  --vp-c-brand-lighter: #ff7340;
+  --vp-c-brand-lighter: rgba(255, 135, 23, 0.25);
+  --vp-c-brand-dark: #ff622d;
+  --vp-c-brand-darker: #e23c00;
+
+  --vp-c-sponsor: #fd1d7c;
+
+  /* Typography */
+  --vp-font-family-base: 'Public Sans', sans-serif;
+
+  /* Code Snippet font */
+  --vp-font-family-mono: 'Space Mono', Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Custom Stlye */
+.custom-layout {
+  background-color: var(--vp-c-bg-soft);
+  color: var(--vp-c-text-1);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 1rem;
+  min-height: 400px;
+  max-width: 1152px;
+  margin: 6rem auto 0;
+  border-radius: 10px;
+}
+
+.custom-layout h1 {
+  font-size: 2.2rem;
+  font-weight: 600;
+}
+
+.custom-layout .btn {
+  background-color: var(--vp-button-brand-bg);
+  color: var(--vp-button-brand-text);
+  border-radius: 20px;
+  padding: 0.5rem 1.4rem;
+}
+
+.VPSidebar {
+  @apply border-r-[1px] border-black border-solid;
+}
+
+/* #f1f5f9 */
+
+.VPNav,
+.VPNavBar,
+.VPNavBar .content-body,
+.VPSidebar,
+.VPContent {
+  /* @apply !bg-[#f1f5f9]; */
+  /* @apply !bg-[#F4F4F0]; */
+}
+
+/* .VPNavBar .VPNavBarTitle .title {
+  @apply !border-b-0;
+} */
+
+/* .VPNavBar,
+.VPNavBar .content-body {
+  @apply border-b-[1px] border-b-black;
+} */
+
+.VPSidebar {
+  /* @apply border-r-[1px] border-r-black !bg-[#f1f5f9]; */
+  /* @apply border-r-[1px] border-r-black !bg-[#F4F4F0]; */
+}
+
+.VPSidebarItem.is-link:not(.is-active) {
+  @apply hover:me-border;
+}
+
+.VPSidebarItem.is-link:not(.is-active) .text {
+  @apply hover:!text-gray-700 hover:!font-semibold;
+}
+
+.VPSidebarItem.is-link {
+  @apply relative hover:transition-all hover:bg-[var(--vp-c-bg)] hover:me-shadow me-border-idle;
+}
+
+.VPSidebarItem.is-active.is-link {
+  @apply me-border bg-[var(--vp-c-bg)] me-shadow font-semibold;
+}
+
+.VPSidebarItem.is-active.is-link .text {
+  @apply !text-gray-900 !font-semibold;
+}
+
+.VPSidebarItem .VPLink {
+  @apply px-3 py-0.5;
+}
+.VPSidebarItem .items {
+  @apply space-y-1.5 mt-1.5;
+}
+
+.plugin-tabs {
+  @apply border-[1px] border-black !rounded-none;
+}
+
+.plugin-tabs--tab-list {
+  @apply border-b-[1px] border-black;
+}
+
+.vp-doc a.no-underline {
+  text-decoration-line: none !important;
+}
+
+.VPFeatures .box {
+  @apply !me-border-1 me-shadow-sm rounded !bg-[#FBFBF9];
+}
+
+.VPHome .VPButton {
+  @apply !me-border hover:me-shadow rounded;
+}
+
+.vp-code {
+  @apply me-border rounded-lg;
+}
