@@ -21,4 +21,4 @@ Neo Brutalism is a design style that draws inspiration from the Brutalist archit
 
 While our component examples are currently provided in Vue, the MeUI library itself is framework-agnostic, compatible with both Vue and React. This flexibility allows you to integrate MeUI into any project, ensuring a consistent design language and streamlined development process.
 
-Ready to dive in? Go to the [Installation Guide](/installation) to get started with MeUI.
+Ready to dive in? Go to the [Installation Guide](/getting-started) to get started with MeUI.

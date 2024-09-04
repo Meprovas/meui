@@ -19,7 +19,6 @@ export default defineConfig({
     [
       'link',
       {
-        // href: 'https://fonts.googleapis.com/css2?family=Rambla:ital,wght@0,400;0,700;1,400;1,700&display=swap',
         href: 'https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap',
         rel: 'stylesheet',
       },
@@ -78,12 +77,12 @@ export default defineConfig({
       next: true,
     },
     editLink: {
-      pattern: 'https://github.com/Evavic44/adocs/edit/main/docs/:path',
+      pattern: 'https://github.com/meprovas/meui/edit/main/apps/docs/:path',
       text: 'Edit this page on GitHub',
     },
     footer: {
       message: 'Released under the MIT License.',
-      copyright: 'Copyright © 2024-present Adocs',
+      copyright: 'Copyright © 2024-present MeUI',
     },
 
     // Mobile Config only
@@ -109,7 +108,7 @@ export default defineConfig({
     },
     resolve: {
       alias: {
-        '@': path.resolve(__dirname, '../src'),
+        '@': path.resolve(__dirname, '../src/'),
       },
     },
   },

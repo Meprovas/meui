@@ -1,0 +1,7 @@
+{
+  "hosting": {
+    "public": ".vitepress/dist",
+    "ignore": [],
+    "cleanUrls": true
+  }
+}
