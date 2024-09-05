@@ -1,7 +1,7 @@
 {
   "name": "@meprovas/meui",
-  "version": "0.1.1",
-  "description": "",
+  "version": "0.1.3",
+  "description": "MeUI is a comprehensive UI Kit designed specifically for use with Tailwind CSS",
   "main": "src/index.js",
   "types": "src/index.d.ts",
   "repository": "https://github.com/meprovas/meui",
@@ -12,7 +12,7 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "peerDependencies": {
     "tailwindcss": ">=3.0.0 || >= 3.0.0-alpha.1"
   },
